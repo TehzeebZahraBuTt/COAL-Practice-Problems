@@ -4,7 +4,7 @@ inputmsg byte "Enter number to find factorial",0
 fact dword ?
 .code
 
-Factorial PROC uses eax
+Factorial PROC uses eax ecx
 mov ecx,eax   ;eax=5 ecx=5 5,4,3,2,1
 mov eax,1
 factloop:

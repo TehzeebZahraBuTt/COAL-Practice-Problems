@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="ArrayElementsStats-usingProcedures.asm">
+    <MASM Include="Factorial-using-Procedure.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
