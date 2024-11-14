@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="SumTwoNumber-Using-Procedure.asm">
+    <MASM Include="ArrayElementsStats-usingProcedures.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
