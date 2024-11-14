@@ -5,10 +5,10 @@ num2 dword ?
 inputmsg1 byte "Enter first number",0
 inputmsg2 byte "Enter second number",0
 .code
-sumOf PROC uses eax ebx
+sumOf PROC
 
 add eax,ebx
-call writedec
+;call writedec
 RET
 sumOf endp
 main proc
@@ -25,7 +25,7 @@ mov num2,eax
 
 mov ebx,num1
 call sumOf
-;call writedec
+call writedec
 exit
 main endp
 end main
