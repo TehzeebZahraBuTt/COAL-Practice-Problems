@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="factorial-using-stack.asm">
+    <MASM Include="sumTwoNum-usingStack.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
