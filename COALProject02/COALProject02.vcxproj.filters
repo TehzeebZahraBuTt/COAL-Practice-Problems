@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="Procedures-Understanding.asm">
+    <MASM Include="factorial-using-stack.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
