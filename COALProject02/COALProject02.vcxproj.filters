@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="arrayStats-usingStack.asm">
+    <MASM Include="LastRowSumMulti.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
