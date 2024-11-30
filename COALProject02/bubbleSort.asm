@@ -1,35 +1,72 @@
-include irvine32.inc
+INCLUDE IRVINE32.INC
 
-.data
-arr byte 10,20,30,40
+.DATA
+array dword 5 DUP(?)
 
-.code
-main proc
+input byte "Enter values of array",0
+output_msg byte "Sorted values are:",0
 
-mov ecx,4
-mov esi,offset arr
-outer:
+.CODE
+MAIN PROC
 
-   push ecx
-       mov edi,3
-	    inner:
+    
+    mov edx, offset input
+    CALL WriteString
+    CALL crlf
 
-		  movzx eax, byte ptr [esi+1*edi]
-		  movzx ebx,byte ptr [esi+2*edi]
-		  cmp eax,ebx   ;12>11   temp=j    j=j+1    j+1=temp
+  
+    mov ecx, 5
+    mov esi, 0            
+    mov edx, offset array
 
-		  jg  swap
-		  jng inner
+loop1:
+    CALL ReadInt
+    mov [edx + esi*4], eax
+    inc esi
+    LOOP loop1
 
-		   
+    ; Sorting
+    mov ecx, 5            ; outer loop counter
+    mov edx, offset array
 
-	    loop inner
+outer_loop:
+    push ecx
+    mov ecx, 4            ; inner loop counter 
+    mov esi, 0            ; reset index for inner loop
 
-   pop ecx
+inner_loop:
+    mov eax, [edx + esi*4]       
+    mov ebx, [edx + esi*4 + 4]   
 
-loop outer
+    cmp eax, ebx
+    jle no_swap
 
+    ; Swap elements
+    mov [edx + esi*4], ebx
+    mov [edx + esi*4 + 4], eax
 
-exit
-main endp
-end main
+no_swap:
+    inc esi
+    loop inner_loop
+    pop ecx
+    loop outer_loop
+
+    ; Print sorted array
+    mov edx, offset output_msg
+    CALL WriteString
+    CALL CRLF
+
+    mov ecx, 5
+    mov esi, 0
+    mov edx, offset array
+
+display_loop:
+    mov eax, [edx + esi*4]
+    CALL WriteDec
+    CALL CRLF
+    inc esi
+    LOOP display_loop
+
+    EXIT
+MAIN ENDP
+END MAIN

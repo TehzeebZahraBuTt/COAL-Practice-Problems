@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="LastRowSumMulti.asm">
+    <MASM Include="bubbleSort.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
