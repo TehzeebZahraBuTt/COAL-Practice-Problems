@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="Structure.asm">
+    <MASM Include="QuadraticTask-float.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>

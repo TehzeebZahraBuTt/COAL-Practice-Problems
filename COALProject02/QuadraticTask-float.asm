@@ -96,6 +96,18 @@ fsqrt                  ;sqrt(st(0))
 fadd
 fstp upparVal
 
+;-----------
+fld val2
+fld Aval
+
+fmul 
+fstp val2
+
+;-----------
+
+
+
+
 fld upparVal
 fld val2
 fdiv
