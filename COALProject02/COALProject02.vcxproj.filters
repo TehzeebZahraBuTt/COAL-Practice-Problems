@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="bubbleSort.asm">
+    <MASM Include="Structure.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
