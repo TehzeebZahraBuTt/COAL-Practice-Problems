@@ -19,7 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="QuadraticTask-float.asm" />
+    <MASM Include="practical-finnal-question-02.asm" />
+    <MASM Include="practical-finnal-question-03.asm" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

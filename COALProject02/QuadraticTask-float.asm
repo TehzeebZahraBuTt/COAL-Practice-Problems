@@ -28,8 +28,8 @@ a=3.8
 b=55.8
 c=2.0
 
-for poitive ans is -0.1366
-for negative ans is -55.66345
+for poitive ans is (-3.5930210E-002)
+for negative ans is (-1.4648280E+001)
 
 &
 
